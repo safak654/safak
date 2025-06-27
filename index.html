@@ -9,25 +9,27 @@
   <style>
    
  .kutu {
-      width: 150px;
-      height:150px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid #faf9f9;
-       justify-content: center;
-        margin: 10px auto  auto; /* Üstten 40px, yatayda ortala */
+      width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: bisque;
+  margin: 10px auto;
+  border: 1px solid #fffbfb;
+  box-sizing: border-box; 
+
     }
 
     .kutu img {
-      width: 100%;
+      width:100%;
       height: 100%;
       object-fit: cover;
     }
 
  
     body {
-      margin: 0;
-      padding: 0;
+      margin: ;
+      padding: ;
 
       /* 🌐 İnternetten resim */
       /* background-image: url('https://images.unsplash.com/photo-1547721064-da6cfb341d50'); */
@@ -48,14 +50,19 @@
       padding-top: 30vh;
       background-color: rgba(230, 226, 226, 0.5);
     }
-    
+  
  .kare {
-      width: 250px;
-      height:60px;
-      border-radius:0 20px ;
+      width: 280px;
+      height:50px;
+      border-radius:20px 20px ;
       overflow: hidden;
-      border: 4px solid #faf9f9;
-      background-color: rgb(177, 176, 176);
+    
+      
+
+       background: linear-gradient(to right, rgba(229, 227, 227, 09), rgb(92, 168, 179));
+        border-radius: 16px;
+
+      height: 60px;
        justify-content: center;
       margin: 10px auto  auto;
        display: flex;
@@ -64,10 +71,25 @@
   align-items: center;     /* DİKEY */
   text-align: center;
      }
+   
      
-      
+      #ŞAFAK{
+        color: rgb(54, 42, 39);
+      }
      
-
+    .kişisel{
+   width: 500px;
+  height: 300px;
+  border-radius: 1%;
+  overflow: auto;
+  background-color: bisque;
+  margin: 40px auto;
+  border: 1px solid #fffbfb;
+  box-sizing: border-box; 
+  float: left; 
+  border-radius: 20px 20px; 
+  background: linear-gradient(45deg, rgb(252, 253, 253) 0%, rgb(208, 216, 184) 50%, rgb(96, 166, 181) 100%);
+    }
    </style>
    
    <body>
@@ -79,8 +101,14 @@
   </div>
     
    <div class="kare">
-     <H1>ŞAFAK GENEL</H1>
+     <H1 id="ŞAFAK">
+      ŞAFAK GENEL</H1>
      </div>
+
+     <div class="kişisel">
+
+     </div>
+
 </body>
   
 </head>

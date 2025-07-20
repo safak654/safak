@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arka Planlı Site</title>
-
-
   <style>
-   
- .kutu {
+    .kutu {
       width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: bisque;
-  margin: 10px auto;
-  border: 1px solid #fffbfb;
-  box-sizing: border-box; 
-
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: bisque;
+      margin: 10px auto;
+      border: 1px solid #fffbfb;
+      box-sizing: border-box;
     }
 
     .kutu img {
-      width:100%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
- 
     body {
-     
-
-      /* 🌐 İnternetten resim */
-      /* background-image: url('https://images.unsplash.com/photo-1547721064-da6cfb341d50'); */
-
-      /* 💻 Bilgisayardan resim */
       background-image: url(63105dbaa025f8c8257f5eda567e96e5.jpg);
-
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -49,138 +37,103 @@
       padding-top: 30vh;
       background-color: rgba(230, 226, 226, 0.5);
     }
-  
- .kare {
+
+    .kare {
       width: 280px;
-      height:50px;
-      border-radius:20px 20px ;
-      overflow: hidden;
-    
-      
-
-       background: linear-gradient(to right, rgba(229, 227, 227, 09), rgb(92, 168, 179));
-        border-radius: 16px;
-
       height: 60px;
-       justify-content: center;
-      margin: 10px auto  auto;
-       display: flex;
-
-  justify-content: center; /* YATAY */
-  align-items: center;     /* DİKEY */
-  text-align: center;
-     }
-   
-     
-      #ŞAFAK{
-        color: rgb(54, 42, 39);
-      }
-     
-    .kişisel{
-   width: 280px;
-  height: 300px;
-  border-radius: 1%;
-  
-  overflow: hidden;
-  background-color: bisque;
- margin:  auto;
- margin-top: 40px;
-  border: 1px solid #fffbfb;
-  box-sizing: border-box; 
-  margin-left: auto; 
-  border-radius: 20px 20px; 
-  background: linear-gradient(45deg, rgb(252, 253, 253) 0%, rgb(208, 216, 184) 50%, rgb(96, 166, 181) 100%);
-   
-  display: flex;
-justify-content: center;
- 
+      border-radius: 20px;
+      background: linear-gradient(to right, rgba(229, 227, 227, 0.9), rgb(92, 168, 179));
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
-.kapsayıcı{
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* İki kutu arası boşluk */
-  margin-top: 20px;
-}
+    #ŞAFAK {
+      color: rgb(54, 42, 39);
+      margin: 0;
+    }
 
-  .iletişim{
-   width: 55px;
-      height:50px;
-      border-radius:20px 20px ;
-      overflow: hidden;
-    
-      
+    .kişisel {
+      width: 280px;
+      height: 300px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, rgb(252, 253, 253), rgb(208, 216, 184), rgb(96, 166, 181));
+      margin: 40px auto;
+      display: flex;
+      justify-content: center;
+    }
 
-       background: linear-gradient(to right, rgba(229, 227, 227, 09), rgb(92, 168, 179));
-        border-radius: 16px;
+    .kapsayıcı {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
 
+    .iletişim {
+      width: 55px;
       height: 60px;
-       justify-content: center;
-     transform: translateX(-20px);
-       display: flex;
+      border-radius: 16px;
+      background: linear-gradient(to right, rgba(229, 227, 227, 0.9), rgb(92, 168, 179));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(-20px);
+      text-align: center;
+    }
 
-  justify-content: center; /* YATAY */
-  align-items: center;     /* DİKEY */
-  text-align: center;
-}
-.insta{
-  width: 55px;
-      height:50px;
-      border-radius:20px 20px ;
-      overflow: hidden;
-    
-     transform: translateX(20px);
-
-       background: linear-gradient(to right, rgba(229, 227, 227, 09), rgb(92, 168, 179));
-        border-radius: 16px;
-
+    .insta {
+      width: 55px;
       height: 60px;
-       justify-content: center;
-       
+      border-radius: 16px;
+      background: linear-gradient(to right, rgba(229, 227, 227, 0.9), rgb(92, 168, 179));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(20px);
+      text-align: center;
+      overflow: hidden;
+    }
 
-       display: flex;
+    .insta img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    
+    }
 
-  justify-content: center; /* YATAY */
-  align-items: center;     /* DİKEY */
-  text-align: center;
+    .insta a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
 
-}
-.insta img {
-   width: 110%;
-  height: 110%;
-  object-fit: cover;
-   
-}
-   </style>
-   
-   <body>
-    
-    
-    
-     <div class="kutu">
-    <img src="IMG_20240831_222127_813.jpg" alt="Benim Resmim">
+  <div class="kutu">
+    <img src="IMG_20240831_222127_813.jpg" alt="Benim Resmim" />
   </div>
-    
-   <div class="kare">
-     <H1 id="ŞAFAK">
-      ŞAFAK GENEL</H1>
-     </div>
 
-     <div class="kişisel">
+  <div class="kare">
+    <h1 id="ŞAFAK">ŞAFAK GENEL</h1>
+  </div>
 
-     </div>
+  <div class="kişisel">
+    <!-- İçerik buraya -->
+  </div>
 
-<div class="kapsayıcı">
+  <div class="kapsayıcı">
+    <div class="iletişim"></div>
 
-     <div class="iletişim"></div>
-
-     ,<div class="insta">
-      <img src="indir-removebg-preview.png">
-     <a href="https://www.instagram.com/safak_gnl_61?igsh=YjkzMDY4OWNlbm04" target="_blank"></a>
-     </div>
-
-</div>
+    <div class="insta">
+      <a href="https://www.instagram.com/safak_gnl_61?igsh=YjkzMDY4OWNlbm04" target="_blank" rel="noopener noreferrer">
+        <img src="indir-removebg-preview.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
 
 </body>
-  
-</head>
+</html>

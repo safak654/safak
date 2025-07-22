@@ -25,16 +25,17 @@
     }
 
     #menuBtn {
-      background: linear-gradient(to right, rgba(19, 16, 16, 0.9), rgb(92, 168, 179));
+      background: linear-gradient(to right, rgba(163, 160, 160, 0.9), rgb(128, 195, 206));
       color: rgb(251, 251, 251);
-      border: none;
-      border-radius: 10px;
-      padding: 8px 16px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+       border-radius: 15px;
+  }
+ 
+    
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
 
     #menuBtn:hover {
       background-color: rgb(92, 168, 179);
@@ -158,13 +159,16 @@
 <body>
 
   <!-- Sabit Ana Sayfa Butonu -->
-  <div class="menuKutuContainer">
-    <button id="menuBtn">Ana Sayfa</button>
-    <div id="menuDropdown" class="menuDropdown">
-      <a href="can.html">Profil</a>
-      <a href="#iletisim">İletişim</a>
-    </div>
+<div class="menuKutuContainer">
+  <button id="menuBtn">
+    <img src="indir__1_-removebg-preview.png" alt="" class="menu-icon" />
+  </button>
+  <div id="menuDropdown" class="menuDropdown">
+    <a href="can.html">Profil</a>
+    <a href="#iletisim">İletişim</a>
   </div>
+</div>
+
 
   <!-- Profil Resmi -->
   <div class="kutu">

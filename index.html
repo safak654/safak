@@ -3,26 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arka Planlı Site</title>
+  <title>Şafak GENEL´İN Sitesi</title>
   <style>
-    .kutu {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      background-color: bisque;
-      margin: 10px auto;
-      border: 1px solid #fffbfb;
-      box-sizing: border-box;
-    }
-
-    .kutu img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
     body {
+      margin: 0;
       background-image: url(63105dbaa025f8c8257f5eda567e96e5.jpg);
       background-size: cover;
       background-position: center;
@@ -32,10 +16,71 @@
       color: white;
     }
 
-    .icerik {
+    /* Menü butonu en sola sabit */
+    .menuKutuContainer {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+
+    #menuBtn {
+      background: linear-gradient(to right, rgba(19, 16, 16, 0.9), rgb(92, 168, 179));
+      color: rgb(251, 251, 251);
+      border: none;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #menuBtn:hover {
+      background-color: rgb(92, 168, 179);
+    }
+
+    .menuDropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: rgba(54, 42, 39, 0.95);
+      border-radius: 10px;
+      width: 150px;
       text-align: center;
-      padding-top: 30vh;
-      background-color: rgba(230, 226, 226, 0.5);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .menuDropdown a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .menuDropdown a:hover {
+      background-color: rgb(92, 168, 179);
+    }
+
+    .kutu {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: bisque;
+      margin: 80px auto 10px;
+      border: 1px solid #fffbfb;
+      box-sizing: border-box;
+    }
+
+    .kutu img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .kare {
@@ -63,6 +108,12 @@
       margin: 40px auto;
       display: flex;
       justify-content: center;
+      align-items: center;
+    }
+
+    .kişisel img {
+      width: 90%;
+      height: auto;
     }
 
     .kapsayıcı {
@@ -72,7 +123,7 @@
       margin-top: 20px;
     }
 
-    .iletişim {
+    .iletişim, .insta {
       width: 55px;
       height: 60px;
       border-radius: 16px;
@@ -80,75 +131,62 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(-20px);
-      text-align: center;
+      overflow: hidden;
     }
 
+    .iletişim {
+      transform: translateX(-20px);
+    }
 
-     .iletişim img {
+    .insta {
+      transform: translateX(20px);
+    }
+
+    .iletişim img, .insta img {
       object-fit: cover;
       width: 100%;
       height: 100%;
-    
     }
 
-    .iletişim a {
+    .iletişim a, .insta a {
       display: block;
       width: 100%;
       height: 100%;
     }
-
-    .insta {
-      width: 55px;
-      height: 60px;
-      border-radius: 16px;
-      background: linear-gradient(to right, rgba(229, 227, 227, 0.9), rgb(92, 168, 179));
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: translateX(20px);
-      text-align: center;
-      overflow: hidden;
-    }
-
-.insta img {
-      object-fit: cover;
-      width: 120%;
-      height: 120%;  
-       transform: translateX(-17px) translateY(-7px);
-}
-
-    
-    
-
-    
-    .insta a {
-    display: block;
-      width: 100%;
-      height: 100%;
-    }
-    
   </style>
 </head>
 <body>
 
+  <!-- Sabit Ana Sayfa Butonu -->
+  <div class="menuKutuContainer">
+    <button id="menuBtn">Ana Sayfa</button>
+    <div id="menuDropdown" class="menuDropdown">
+      <a href="can.html">Profil</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </div>
+
+  <!-- Profil Resmi -->
   <div class="kutu">
     <img src="IMG_20240831_222127_813.jpg" alt="Benim Resmim" />
   </div>
 
+  <!-- İsim Alanı -->
   <div class="kare">
     <h1 id="ŞAFAK">ŞAFAK GENEL</h1>
   </div>
 
+  <!-- Kişisel Resim Kutusu -->
   <div class="kişisel">
-    <img src="WhatsApp_Görsel_2025-07-20_saat_22.07.10_fff72076-removebg-preview.png"
-    <!-- İçerik buraya -->
+    <img src="WhatsApp_Görsel_2025-07-20_saat_22.07.10_fff72076-removebg-preview.png" alt="Kişisel Görsel" />
   </div>
 
-  <div class="kapsayıcı">
+  <!-- Sosyal Medya Bağlantıları -->
+  <div class="kapsayıcı" id="iletisim">
     <div class="iletişim">
-      <a href="https://x.com/GenelSafak?t=bjNxBWRO85KEnjZsNTAWPQ&s=08 " target="_blank" rel="noopener noreferrer">
-        <img src="x-twitter-logo-290723-removebg-preview.png" alt="Instagram" />
+      <a href="https://x.com/GenelSafak?t=bjNxBWRO85KEnjZsNTAWPQ&s=08" target="_blank" rel="noopener noreferrer">
+        <img src="x-twitter-logo-290723-removebg-preview.png" alt="Twitter" />
+      </a>
     </div>
 
     <div class="insta">
@@ -157,6 +195,23 @@
       </a>
     </div>
   </div>
+
+  <!-- Menü Açma Scripti -->
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const dropdown = document.getElementById('menuDropdown');
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 </html>
